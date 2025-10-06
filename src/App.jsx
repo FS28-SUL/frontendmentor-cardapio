@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
+import ShoppingCart from "./components/ShoppingCart";
 
 const App = () => {
 
@@ -30,7 +31,10 @@ const App = () => {
             ))
           }
         </div>
-        <div className="w-[300px] bg-white p-5 rounded">Carrinho</div>
+        <div className="w-[300px] bg-white p-5 rounded">
+          <h3 className="font-bold text-2xl">Carrinho</h3>
+          <ShoppingCart />
+        </div>
     </div>
   );
 }
